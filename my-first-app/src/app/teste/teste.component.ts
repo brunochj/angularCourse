@@ -12,9 +12,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TesteComponent implements OnInit {
 
-  constructor() { }
-
+  userName = '';
+  userNameCriado = '';
+  
+  constructor() { 
+  }
+  
   ngOnInit(): void {
   }
 
+  onCreateUsername(){
+    this.userNameCriado = 'o novo usuário é ' + this.userName;
+  }
+
+  onUpdateServerName($event: Event){
+    this.userName = (<HTMLInputElement>event.target).value;
+    console.log(event)
+  }
 }

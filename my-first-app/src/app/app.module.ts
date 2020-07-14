@@ -9,6 +9,7 @@ import { ServersComponent } from './servers/servers.component';
 import { SuccessComponent } from './success/success.component';
 import { TesteComponent } from './teste/teste.component';
 import { FalhaComponent } from './falha/falha.component';
+import { DisplayComponent } from './display/display.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FalhaComponent } from './falha/falha.component';
     ServersComponent,
     SuccessComponent,
     TesteComponent,
-    FalhaComponent
+    FalhaComponent,
+    DisplayComponent
   ],
   imports: [
     BrowserModule,
